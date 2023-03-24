@@ -1,0 +1,47 @@
+    # 旧检索模块
+    # # 按中文检索桌游库
+    # def search_cn_name(self, name):
+    #     a = 0
+    #     for boardgame in self.boardgame_list:
+    #         if name in boardgame.name:
+    #             a += 1
+    #             print(f'\n{a}.{boardgame.name}    在库中')
+    #             print(boardgame)
+    #         ratio = difflib.SequenceMatcher(lambda x: x == " ", name, boardgame.name).quick_ratio()
+    #         if ratio >= 0.4 and a != 1:
+    #             a += 1
+    #             print(f'\n模糊搜索匹配的结果为{boardgame.name}')
+    #             print(f'{a}.{boardgame.name}    在库中')
+    #             print(boardgame)
+    #     if a == 0:
+    #         print('没有在库中找到匹配的名字')
+    #
+    # # 用英文名字检索库
+    # def search_en_name(self, en_name):
+    #     a = 0
+    #     for boardgame in self.boardgame_list:
+    #         if en_name.lower() in boardgame.en_name.lower():
+    #             a += 1
+    #             print(f'\n{a}.{boardgame.en_name}    在库中')
+    #             print(boardgame)
+    #         ratio = difflib.SequenceMatcher(lambda x: x == " ", en_name.lower(),
+    #                                         boardgame.en_name.lower()).quick_ratio()
+    #         if ratio >= 0.8 and a != 1:
+    #             a += 1
+    #             print(f'\n模糊搜索匹配的结果为{boardgame.en_name}')
+    #             print(f'{a}.{boardgame.en_name}    在库中')
+    #             print(boardgame)
+    #     if a == 0:
+    #         print('没有在库中找到对应的英文名')
+    #
+    # # 检索桌游名字
+    # def search(self, name):
+    #     input_words = f'{name}'
+    #     res = True
+    #     for word in input_words:
+    #         if not '\u4e00' <= word <= '\u9fff':
+    #             res = False
+    #     if res:
+    #         self.search_cn_name(name)
+    #     else:
+    #         self.search_en_name(name)
