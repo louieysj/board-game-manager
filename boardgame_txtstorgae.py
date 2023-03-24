@@ -36,7 +36,6 @@ import difflib  # 检查两个字符串匹配程度
 import postman  # 导入邮件自动发送脚本
 import psutil  # 外部库需要安装 用来监测进程的内存占用情况
 import os  # 检测系统信息和操作系统
-import json
 
 
 # 定义桌游的属性和返回的文本格式
@@ -424,9 +423,3 @@ for Boardgame in boardgameManager.boardgame_list:
     file_handle.write('\n')
 file_handle.close()
 
-# 写入json保存运行结果
-with open('jsonstorage.json', mode='w', encoding='utf-8') as f:
-    data = []
-    for Boardgame in boardgameManager.boardgame_list:
-        data.append(Boardgame)
-    json.dump(data, f, ensure_ascii=False, indent=4)
