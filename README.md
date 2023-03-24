@@ -1,5 +1,5 @@
 # board-game-manager
-one board game manager based on python. learning and coding...\n
+one board game manager based on python. learning and coding...  
 this project is for boardgame admissions and searches, folder name and menu in code are in Chinese
 save all files in same folder, run boardgame_txtstorgae.py it should work in IDE
 这是一个桌游收录以及检索的管理器，文件夹和代码中的提示菜单包含中文名称
